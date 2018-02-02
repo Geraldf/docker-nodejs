@@ -8,3 +8,6 @@ services:
       - /usr/app/node_modules
     ports:
       - "3000:3000"
+    environment: 
+      - http_proxy=10.70.20.17:8080
+      - https_proxy=10.70.20.17:8080
