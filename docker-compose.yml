@@ -2,9 +2,9 @@ version: '2'
 services:
   web:
     build: .
-    args:
-        proxy: "http://10.70.20.17:8080"
-        sproxy: "http://10.70.20.17:8080"
+    args: 
+      proxy: "http://10.70.20.17:8080"
+      sproxy: "http://10.70.20.17:8080"
         
     command: npm start
     volumes:
