@@ -7,6 +7,8 @@ WORKDIR /usr/app
 ENV http_proxy=${http_proxy}
 ENV https_proxy=${https_proxy}
 
+RUN env
+
 COPY package.json .
 
 RUN npm install 
