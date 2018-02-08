@@ -5,7 +5,7 @@ WORKDIR /usr/app
 ARG http_proxy=${http_proxy}
 ARG https_proxy=${https_proxy}
 RUN echo --------
-RUN ech0 ${http_proxy}
+RUN echo ${http_proxy}
 
 RUN env
 
