@@ -4,8 +4,8 @@ ARG sproxy
 
 WORKDIR /usr/app
 
-ENV http_proxy="http://10.0.128.13:3128"
-ENV https_proxy="https://10.0.128.13:3128"
+ENV http_proxy="http://10.0.128.11:3128"
+ENV https_proxy="https://10.0.128.11:3128"
 
 COPY package.json .
 
