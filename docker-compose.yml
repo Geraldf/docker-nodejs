@@ -9,5 +9,5 @@ services:
     ports:
       - "3000:3000"
     environment: 
-      - http_proxy=${http_prox}
-      - https_proxy=${https_prox}
+      - http_proxy=${http_proxy}
+      - https_proxy=${https_proxy}
