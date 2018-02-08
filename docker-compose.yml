@@ -2,10 +2,6 @@ version: '2'
 services:
   web:
     build: .
-    args: 
-      proxy: "http://10.70.20.17:8080"
-      sproxy: "http://10.70.20.17:8080"
-        
     command: npm start
     volumes:
       - .:/usr/app/
@@ -13,5 +9,5 @@ services:
     ports:
       - "3000:3000"
     environment: 
-      - http_proxy=10.70.20.17:8080
-      - https_proxy=10.70.20.17:8080
+      - http_proxy=http://10.70.20.17:8080
+      - https_proxy=https://10.70.20.17:8080

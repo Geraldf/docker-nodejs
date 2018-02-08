@@ -1,4 +1,6 @@
 FROM node:7.7.2-alpine
+ARG proxy
+ARG sproxy
 
 WORKDIR /usr/app
 
