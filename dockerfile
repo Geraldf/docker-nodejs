@@ -13,7 +13,7 @@ RUN echo http_proxy
 RUN env
 
 COPY package.json .
-
+RUN npm install npm@latest
 RUN npm install 
 
 COPY . .
