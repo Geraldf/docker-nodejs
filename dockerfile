@@ -13,7 +13,8 @@ RUN echo http_proxy
 RUN env
 
 COPY package.json .
-RUN npm install npm@latest
-RUN npm install 
+
+RUN npm config set https-proxy http://10.0.128.11:3128 \
+    && npm install 
 
 COPY . .
